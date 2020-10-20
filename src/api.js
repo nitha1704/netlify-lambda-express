@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 
+const cors = require('cors');
 const serverless = require('serverless-http');
 
+app.use(cors());
 router.get('/',(req,res)=>{
     res.json(
         {name:'puxer',lastname: 'maxson'}
