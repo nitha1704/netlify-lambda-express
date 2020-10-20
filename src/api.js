@@ -7,10 +7,15 @@ const serverless = require('serverless-http');
 
 app.use(cors());
 router.get('/',(req,res)=>{
-    res.json(
+
+    const users = [
       { id: 1, name: "puxer", lastname: "maxson" },
       { id: 2, name: "Mary", lastname: "Swan" },
-      { id: 3, name: "John", lastname: "Doe" }
+      { id: 3, name: "John", lastname: "Doe" },
+    ]
+
+    res.json(
+      users
     );
 })
 
