@@ -8,8 +8,10 @@ const serverless = require('serverless-http');
 app.use(cors());
 router.get('/',(req,res)=>{
     res.json(
-        {name:'puxer',lastname: 'maxson'}
-    )
+      { id: 1, name: "puxer", lastname: "maxson" },
+      { id: 2, name: "Mary", lastname: "Swan" },
+      { id: 3, name: "John", lastname: "Doe" }
+    );
 })
 
 router.get('/hell',(req,res)=>{
