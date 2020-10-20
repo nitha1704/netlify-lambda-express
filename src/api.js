@@ -19,6 +19,10 @@ router.get('/',(req,res)=>{
     );
 })
 
+router.post("/", (req, res) => {
+  res.send("successful");
+});
+
 router.get('/hell',(req,res)=>{
     res.send('hell')
 })
